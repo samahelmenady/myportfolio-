@@ -406,12 +406,15 @@
                   >Electronics</span
                 >
               </div>
-              <a href="https://www.linkedin.com/posts/samah-elmenady-9937182a2_arduino-smartcar-iot-activity-7355212034784772097-tX8O?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEkTwH8BgowhTFxGw6iBPsaMPTEZU45E46U" class="text-blue-500 hover:text-blue-700 font-medium"
+              <a
+                href="https://www.linkedin.com/posts/samah-elmenady-9937182a2_arduino-smartcar-iot-activity-7355212034784772097-tX8O?utm_source=share&utm_medium=member_desktop&rcm=ACoAAEkTwH8BgowhTFxGw6iBPsaMPTEZU45E46U"
+                class="text-blue-500 hover:text-blue-700 font-medium"
                 >View Project →</a
               >
             </div>
           </div>
-
+        </div>
+      </div>
     </section>
 
     <!-- Skills Section -->
@@ -570,65 +573,92 @@
         </div>
       </div>
     </section>
-<form 
-  action="https://formspree.io/f/mjkowney"
-  method="POST" 
-  class="bg-white p-8 rounded-lg shadow-md"
->
-  <div class="mb-6">
-    <label for="name" class="block text-sm font-medium text-gray-700 mb-2">
-      Your Name
-    </label>
-    <input
-      type="text"
-      id="name"
-      name="name"
-      required
-      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-    />
-  </div>
-  <div class="mb-6">
-    <label for="email" class="block text-sm font-medium text-gray-700 mb-2">
-      Your Email
-    </label>
-    <input
-      type="email"
-      id="email"
-      name="email"
-      required
-      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-    />
-  </div>
-  <div class="mb-6">
-    <label for="subject" class="block text-sm font-medium text-gray-700 mb-2">
-      Subject
-    </label>
-    <input
-      type="text"
-      id="subject"
-      name="subject"
-      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-    />
-  </div>
-  <div class="mb-6">
-    <label for="message" class="block text-sm font-medium text-gray-700 mb-2">
-      Your Message
-    </label>
-    <textarea
-      id="message"
-      name="message"
-      rows="4"
-      required
-      class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
-    ></textarea>
-  </div>
-  <button
-    type="submit"
-    class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-md hover:opacity-90 transition"
-  >
-    Send Message
-  </button>
-</form>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 px-4 bg-gray-50">
+      <div class="max-w-6xl mx-auto">
+        <h2 class="text-3xl font-bold text-center mb-12 gradient-text">
+          Contact Me
+        </h2>
+        <form
+          action="https://formspree.io/f/mjkowney"
+          method="POST"
+          id="contact-form"
+          class="bg-white p-8 rounded-lg shadow-md max-w-lg mx-auto"
+        >
+          <div class="mb-6">
+            <label
+              for="name"
+              class="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Your Name
+            </label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="email"
+              class="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Your Email
+            </label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="subject"
+              class="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Subject
+            </label>
+            <input
+              type="text"
+              id="subject"
+              name="subject"
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            />
+          </div>
+          <div class="mb-6">
+            <label
+              for="message"
+              class="block text-sm font-medium text-gray-700 mb-2"
+            >
+              Your Message
+            </label>
+            <textarea
+              id="message"
+              name="message"
+              rows="4"
+              required
+              class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+            ></textarea>
+          </div>
+          <button
+            type="submit"
+            id="submit-button"
+            class="w-full px-6 py-3 bg-gradient-to-r from-blue-500 to-purple-500 text-white rounded-md hover:opacity-90 transition disabled:opacity-50"
+          >
+            Send Message
+          </button>
+          <p
+            id="form-message"
+            class="mt-4 text-center text-sm text-gray-600 hidden"
+          ></p>
+        </form>
+      </div>
+    </section>
 
     <!-- Footer -->
     <footer class="bg-gray-900 text-white py-12 px-4">
@@ -639,7 +669,10 @@
             <p class="text-gray-400 mt-2">AI Engineer</p>
           </div>
           <div class="flex space-x-6">
-            <a href="https://github.com/samahelmenady" class="text-gray-400 hover:text-white transition">
+            <a
+              href="https://github.com/samahelmenady"
+              class="text-gray-400 hover:text-white transition"
+            >
               <svg
                 class="h-6 w-6"
                 fill="currentColor"
@@ -653,7 +686,10 @@
                 />
               </svg>
             </a>
-            <a href="https://www.instagram.com/samah_elmenady" class="text-gray-400 hover:text-white transition">
+            <a
+              href="https://www.instagram.com/samah_elmenady"
+              class="text-gray-400 hover:text-white transition"
+            >
               <svg
                 class="h-6 w-6"
                 fill="currentColor"
@@ -667,7 +703,10 @@
                 />
               </svg>
             </a>
-            <a href="https://twitter.com/samah_elmenady" class="text-gray-400 hover:text-white transition">
+            <a
+              href="https://twitter.com/samah_elmenady"
+              class="text-gray-400 hover:text-white transition"
+            >
               <svg
                 class="h-6 w-6"
                 fill="currentColor"
@@ -679,7 +718,10 @@
                 />
               </svg>
             </a>
-            <a href="https://www.linkedin.com/in/samah-elmenady-9937182a2/" class="text-gray-400 hover:text-white transition">
+            <a
+              href="https://www.linkedin.com/in/samah-elmenady-9937182a2/"
+              class="text-gray-400 hover:text-white transition"
+            >
               <svg
                 class="h-6 w-6"
                 fill="currentColor"
@@ -703,6 +745,7 @@
       </div>
     </footer>
 
+    <!-- JavaScript for mobile menu, smooth scrolling, and form handling -->
     <script>
       // Mobile menu toggle
       const mobileMenuButton = document.querySelector(".mobile-menu-button");
@@ -717,20 +760,56 @@
         anchor.addEventListener("click", function (e) {
           e.preventDefault();
           mobileMenu.classList.add("hidden");
-
           document.querySelector(this.getAttribute("href")).scrollIntoView({
             behavior: "smooth",
           });
         });
       });
 
-      // Form submission handler
-      const contactForm = document.querySelector("form");
-      contactForm.addEventListener("submit", (e) => {
+      // Form submission handler with Formspree
+      const contactForm = document.getElementById("contact-form");
+      const submitButton = document.getElementById("submit-button");
+      const formMessage = document.getElementById("form-message");
+
+      contactForm.addEventListener("submit", async (e) => {
         e.preventDefault();
-        alert("Thank you for your message! I will get back to you soon.");
-        contactForm.reset();
+
+        // Disable button and show loading state
+        submitButton.disabled = true;
+        submitButton.textContent = "Sending...";
+        formMessage.classList.add("hidden");
+
+        try {
+          const response = await fetch(contactForm.action, {
+            method: contactForm.method,
+            body: new FormData(contactForm),
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (response.ok) {
+            formMessage.classList.remove("hidden");
+            formMessage.classList.remove("text-red-600");
+            formMessage.classList.add("text-green-600");
+            formMessage.textContent =
+              "Thank you for your message! I'll get back to you soon.";
+            contactForm.reset();
+          } else {
+            throw new Error("Failed to send message.");
+          }
+        } catch (error) {
+          formMessage.classList.remove("hidden");
+          formMessage.classList.remove("text-green-600");
+          formMessage.classList.add("text-red-600");
+          formMessage.textContent =
+            "Something went wrong. Please try again later.";
+        } finally {
+          submitButton.disabled = false;
+          submitButton.textContent = "Send Message";
+        }
       });
     </script>
   </body>
 </html>
+-
